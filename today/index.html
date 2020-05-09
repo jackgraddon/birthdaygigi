@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Happy Birthday Gigi!</title>
+    <link href="" rel="icon" />
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Personal CSS -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/32cc714e85.js" crossorigin="anonymous"></script>
+    <!-- Some JS -->
+    <script src="script/show.js"></script>
+    <script src="script/hide.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <div class="jumbotron mt-5">
+            <h1>Happy Birthday, Gigi!</h1>
+            <p class="lead">I hope you have an amazing birthday!</p>
+        </div>
+        <div class="textbox mt-5" id="0">
+            <h3>Hi Gigi!</h3>
+            <p>It looks like you are 16! Congratulations! I know these aren't the most optimal of conditions for a sweet
+                sixteen, but everything will be great! Because guess what?</p>
+            <a class="btn btn-primary" onclick="show('1')" id="show1">What?</a>
+        </div>
+        <div class="textbox mt-5 none" id="1">
+            <h3>Because...</h3>
+            <p>There are so many cool things you can do now!</p>
+            <a class="btn btn-primary" onclick="show('2')" id="show2">Like?</a>
+        </div>
+        <div class="textbox mt-5 none" id="2">
+            <h3>Like...</h3>
+            <p>
+                <ul>
+                    <li>Drive a car! <i class="fa fa-car" aria-hidden="true"></i></li>
+                    <li>Have social media! <i class="fa fa-hashtag" aria-hidden="true"></i></li>
+                    <li>Drink! <i class="fas fa-wine-glass"></i> <span class="text-muted"
+                            style="font-size: smaller;">Wait I think that's wrong...</span> Wait.. you CAN?
+                    </li>
+                </ul>
+                And of course...
+                <ul>
+                    <li>Get a licence to sell scrap metal. <i class="fas fa-dollar-sign"></i></li>
+                    <li>Be a glider pilot. <i class="fa fa-paper-plane" aria-hidden="true"></i></li>
+                    <li>Make medical decisions. <i class="fa fa-heartbeat" aria-hidden="true"></i></li>
+                    <li>Work! <i class="fa fa-briefcase" aria-hidden="true"></i></li>
+                    <li>Register to donate. <i class="fas fa-hand-holding-medical"></i></li>
+                    <li>Change your name. <i class="fas fa-signature    "></i> <span class="text-muted"
+                            style="font-size: smaller;">Please don't though I love your name!</span></li>
+                    <li>Apply for national insurance. <i class="fas fa-car-crash"></i></li>
+                    <li>Get a passport! <i class="fas fa-passport"></i></li>
+                </ul>
+                And obviously, you can...
+                <ul>
+                    <li>Drive a moped! <i class="fa fa-motorcycle" aria-hidden="true"></i></li>
+                </ul>
+            </p>
+            <a class="btn btn-primary" onclick="show('3')" id="show3">That's a lot!</a>
+        </div>
+        <div class="textbox mt-5 none" id="3">
+            <h3>Yeah it is!</h3>
+            <p>There are so many things! And you can try all of them! Except changing your name DO NOT DO THAT!!!<br>
+                And I know there is one thing that might not happen, and that being see me, your amazing boyfriend.<br>
+                <span class="text-muted" style="font-size: smaller;">I mean, c'mon who else makes a website for a
+                    birthday present.</span><br>
+                Anyways, enough braggin about my amazing love for my perfect girlfriend.
+            </p>
+            <br>
+            <p style="font-size: smaller;">Or is it..?</p>
+            <a class="btn btn-primary" onclick="show('4')" id="show4">Oh?</a>
+        </div>
+        <div class="textbox mt-5 none" id="4">
+            <h3>I loves you so much!</h3>
+            <p>I don't think you truly know how much I really really <i class="fa fa-heart" aria-hidden="true"></i> you! Because it is like...</p>
+            <img src="image/earth.png" class="earth">
+            <div class="loveAmount mb-3"></div>
+            <img src="image/moon.png" class="moon">
+            <br>
+            <p>This much? Oh! And back, of course!</p>
+            <a class="btn btn-primary" onclick="show('5')" id="show5">Yay!</a>
+        </div>
+        <div class="textbox mt-5 none" id="5">
+            <h3>Let's see what's in store for my cutie!</h3>
+            <p>We have a few options that you can choose from. Gifts of course.</p>
+            <div class="d-flex justify-content-sm-center">
+                <div class="card" id="card1">
+                    <div class="card-header">
+                        <h3>365 coupons for a free hug!</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>With this shiny coupon, you can get one free hug for every day of the year!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" onclick="hide('card1')">Claim!</a>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="card-header">
+                        <h3>365 coupons for a free hug!</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>With this shiny coupon, you can get one free hug for every day of the year!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" onclick="hide('card2')">Claim!</a>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <div class="card-header">
+                        <h3>365 coupons for a free hug!</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>With this shiny coupon, you can get one free hug for every day of the year!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" onclick="hide('card3')">Claim!</a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-primary" onclick="show('6')" id="show6">Yay!</a>
+        </div>
+    </main>
+    <canvas id="canvas"></canvas>
+</body>
+
+<!-- Date Test -->
+<script src="script/date.js"></script>
+<!-- Confetti -->
+<script src="script/confetti.js"></script>
+
+</html>

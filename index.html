@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Wait until June 3!</title>
+    <link href="" rel="icon" />
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Personal CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/32cc714e85.js" crossorigin="anonymous"></script>
+    <!-- CSS for This Page -->
+    <style>
+        .splash {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(131deg, #bb2ec3, #9f51ea, #51c7ea, #56d9a0);
+            background-size: 800% 800%;
+
+            -webkit-animation: spashBackground 38s ease infinite;
+            -moz-animation: spashBackground 38s ease infinite;
+            animation: spashBackground 38s ease infinite;
+        }
+
+        .splash h1 {
+            color: white;
+            padding: 0px 10px;
+        }
+
+        @-webkit-keyframes spashBackground {
+            0% {
+                background-position: 0% 2%
+            }
+
+            50% {
+                background-position: 100% 99%
+            }
+
+            100% {
+                background-position: 0% 2%
+            }
+        }
+
+        @-moz-keyframes spashBackground {
+            0% {
+                background-position: 0% 2%
+            }
+
+            50% {
+                background-position: 100% 99%
+            }
+
+            100% {
+                background-position: 0% 2%
+            }
+        }
+
+        @keyframes spashBackground {
+            0% {
+                background-position: 0% 2%
+            }
+
+            50% {
+                background-position: 100% 99%
+            }
+
+            100% {
+                background-position: 0% 2%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="splash">
+        <h1 id="header"></h1><br>
+        <p id="lead" class="lead"></p>
+    </div>
+</body>
+
+<script type="text/javascript">
+    function countdown() {
+        var countDate = new Date('June 3, 2020 0:00:00').getTime();
+        let lead = document.getElementById('lead');
+        var now = new Date().getTime();
+        var timeUntil = countDate - now;
+        var days = Math.floor(timeUntil / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeUntil % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeUntil % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeUntil % (1000 * 60)) / 1000);
+        lead.innerHTML = days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds.";
+        console.log(timeUntil)
+    }
+    countdown();
+    setInterval(countdown(), 100);
+</script>
+<!-- Date Test -->
+<script src="script/date.js"></script>
+
+</html>
