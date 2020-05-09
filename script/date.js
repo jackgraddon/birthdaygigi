@@ -19,7 +19,7 @@ if ((month < 5) || (month >= 7)) {
             header.innerHTML = `So excited! You will be 16 tomorrow!!!!`;
             break;
         case 3:
-            window.location.href = 'today/index.html';
+            window.location.href = 'today/';
             break;
         default:
             header.innerHTML = `You already had your birthday!`;
