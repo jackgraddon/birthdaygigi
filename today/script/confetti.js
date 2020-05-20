@@ -207,51 +207,50 @@
     }
 
     window.requestAnimFrame = (function () {
-        return window.requestAnimationFrame || 
-        window.webkitRequestAnimationFrame || 
-        window.mozRequestAnimationFrame || 
-        window.oRequestAnimationFrame || 
-        window.msRequestAnimationFrame || 
-        function (callback) {
-            return window.setTimeout(callback, 1000 / 60);
-        };
+        return window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function (callback) {
+                return window.setTimeout(callback, 1000 / 60);
+            };
     })();
 })();
 
 
-var animateButton = function(e) {
+var animateButton = function (e) {
     02
-     
+
     03
-      e.preventDefault;
+    e.preventDefault;
     04
-      //reset animation
+    //reset animation
     05
-      e.target.classList.remove('animate');
+    e.target.classList.remove('animate');
     06
-       
+
     07
-      e.target.classList.add('animate');
+    e.target.classList.add('animate');
     08
-      setTimeout(function(){
-    09
+    setTimeout(function () {
+        09
         e.target.classList.remove('animate');
-    10
-      },700);
+        10
+    }, 700);
     11
-    };
-    12
-     
-    13
-    var classname = document.getElementsByClassName("bubbly-button");
-    14
-     
-    15
-    for (var i = 0; i < classname.length; i++) {
+};
+12
+
+13
+var classname = document.getElementsByClassName("bubbly-button");
+14
+
+15
+for (var i = 0; i < classname.length; i++) {
     16
-      classname[i].addEventListener('click', animateButton, false);
+    classname[i].addEventListener('click', animateButton, false);
     17
-       
+
     18
-    }
-    
+}

@@ -27,6 +27,10 @@ body {
     display: none;
 }
 
+.btn:active {
+    color: rgb(211, 211, 211) !important;
+}
+
 .show {
     animation: animShow 500ms ease;
     transform: scaleY(1) !important;
