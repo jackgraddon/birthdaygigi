@@ -33,12 +33,12 @@
             <h3>Hi Gigi!</h3>
             <p>It looks like you are 16! Congratulations! I know these aren't the most optimal of conditions for a sweet
                 sixteen, but everything will be great! Because guess what?</p>
-            <a class="btn btn-primary" onclick="show('1')" id="show1">What?</a>
+            <a class="btn btn-primary" onclick="show(1)" id="show1">What?</a>
         </div>
         <div class="textbox mt-5 none" id="1">
             <h3>Because...</h3>
             <p>There are so many cool things you can do now!</p>
-            <a class="btn btn-primary" onclick="show('2')" id="show2">Like?</a>
+            <a class="btn btn-primary" onclick="show(2)" id="show2">Like?</a>
         </div>
         <div class="textbox mt-5 none" id="2">
             <h3>Like...</h3>
@@ -67,7 +67,7 @@
                 <li>Drive a moped! <i class="fa fa-motorcycle" aria-hidden="true"></i></li>
             </ul>
             </p>
-            <a class="btn btn-primary" onclick="show('3')" id="show3">That's a lot!</a>
+            <a class="btn btn-primary" onclick="show(3)" id="show3">That's a lot!</a>
         </div>
         <div class="textbox mt-5 none" id="3">
             <h3>Yeah it is!</h3>
@@ -79,7 +79,7 @@
             </p>
             <br>
             <p style="font-size: smaller;">Or is it..?</p>
-            <a class="btn btn-primary" onclick="show('4')" id="show4">Oh?</a>
+            <a class="btn btn-primary" onclick="show(4)" id="show4">Oh?</a>
         </div>
         <div class="textbox mt-5 none" id="4">
             <h3>I loves you so much!</h3>
@@ -90,7 +90,7 @@
             <img src="image/moon.png" class="moon">
             <br>
             <p>This much? Oh! And back, of course!</p>
-            <a class="btn btn-primary" onclick="show('5')" id="show5">Yay!</a>
+            <a class="btn btn-primary" onclick="show(5)" id="show5">Yay!</a>
         </div>
         <div class="textbox mt-5 none" id="5">
             <h3>Let's see what's in store for my cutie!</h3>
@@ -142,15 +142,15 @@
                 </div>
             </div>
             <p>If you haven't figured out by now, you can claim more than one!</p>
-            <a class="btn btn-primary" onclick="show('6')" id="show6">I have decided!</a>
+            <a class="btn btn-primary" onclick="show(6)" id="show6">I have decided!</a>
         </div>
         <div class="textbox mt-5 none" id="6">
             <h3>I think you'll like it.</h3>
             <p>I'm so excited to see you! Also, I need to know when our next Star Wars movie night is!!</p>
-            <a class="btn btn-primary" onclick="show('show7')" href="http://evt.to/udigaomw" target="_blank"
-                id="calendar7">When is it?</a><br>
+        <a class="btn btn-primary" onclick="show7()" href="http://evt.to/udigaomw" target="_blank"
+                id="elem7">When is it?</a><br>
             <p class="none" id="yay7">Thank you cutie! <i class="fas fa-smile-beam"></i> I can't wait!</p>
-            <a class="btn btn-primary none" onclick="show('7')" id="show7">Yay!</a>
+            <a class="btn btn-primary none" onclick="show(7)" id="show7">Yay!</a>
         </div>
         <div class="textbox mt-5 none" id="7">
             <h3>I know you like to know what I like to imagine for us.</h3>
@@ -176,12 +176,16 @@
             </p>
             <p style="font-size: small;">That DOES NOT MEAN I don't want kids with you, because I think you would be an
                 amazing mom for our kids!</p>
-            <a class="btn btn-primary" onclick="show('8')" id="show8">Ok.</a>
+            <a class="btn btn-primary" onclick="show(8)" id="show8">Ok.</a>
         </div>
         <div class="textbox mt-5 none" id="8">
             <h3>I hope those sound nice to you!</h3>
             <p>What do you like to imagine?</p>
-            <a class="btn btn-primary" href="https://1drv.ms/w/s!AsSPwRaXrqgOqEilQDlFfcc_a_TI?e=sy8QYm" target="_blank">I imagine...</a>
+            <a class="btn btn-primary" onclick="show9()"
+                href="https://1drv.ms/w/s!AsSPwRaXrqgOqEilQDlFfcc_a_TI?e=sy8QYm" target="_blank" id="elem9">I imagine...</a>
+            <br>
+            <p class="none" id="yay9">I can't wait to read it! <i class="fas fa-smile-beam"></i> </p>
+            <a class="btn btn-primary none" onclick="show(9)" id="show9">Yay!</a>
         </div>
     </main>
     <canvas id="canvas"></canvas>

@@ -8,10 +8,6 @@ function show(element) {
     $(elem).removeClass('none');
     $(elem).addClass('show');
     $(`#show${element}`).addClass('none');
-    if (element = 'show7') {
-        $(`#calendar7`).addClass('none');
-        $(`#yay7`).removeClass('none');
-    }
     if ((element == 4) || (element == 5)) {
         $('html,body').animate({
             scrollTop: window.scrollY + 200
@@ -21,4 +17,13 @@ function show(element) {
     document.getElementById(`${element}`).scrollIntoView({
         behavior: 'smooth'
     });
+}
+
+function show7() {
+    $('#show7, #yay7').removeClass('none');
+    $('#elem7').addClass('none');
+}
+function show9() {
+    $('#show9, #yay9').removeClass('none');
+    $('#elem9').addClass('none');
 }
