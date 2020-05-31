@@ -103,6 +103,39 @@ body {
     margin-right: 36.5% !important;
 }
 
+@keyframes bdaycolor {
+    0% {
+        color: #68b2e7;
+        text-shadow: 0 0 15px #47789b;
+    }
+
+    30% {
+        color: #7dd352;
+        text-shadow: 0 0 15px #4f8534;
+    }
+
+    60% {
+        color: #e7935a;
+        text-shadow: 0 0 15px #7e4f30;
+    }
+
+    90% {
+        color: rgb(248, 88, 115);
+        text-shadow: 0 0 15px rgb(146, 52, 67);
+    }
+
+    100% {
+        color: #b068f8;
+        text-shadow: 0 0 15px #61398a;
+    }
+}
+
+.bdaycolor {
+    animation: bdaycolor 20s infinite;
+    animation-direction: alternate;
+    position: relative !important;
+}
+
 /* Confetti */
 canvas {
     position: fixed;

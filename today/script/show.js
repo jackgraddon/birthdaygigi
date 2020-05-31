@@ -27,3 +27,7 @@ function show9() {
     $('#show9, #yay9').removeClass('none');
     $('#elem9').addClass('none');
 }
+function show10() {
+    $('#show10').removeClass('none');
+    $('#elem10').addClass('none');
+}
