@@ -98,11 +98,11 @@
             <div class="row">
                 <div class="card col-sm" id="card1">
                     <div class="card-header">
-                        <h3>Eight Scented Candles</h3>
+                        <h3>Scented Candle</h3>
                     </div>
                     <div class="card-body">
-                        <p>Eight finely crafted, made from natural soy wax. Supposedly designed for stress relief and
-                            aromatherapy!</p>
+                        <p>A yummy smelling, fruity candle! Fresh made at a local candle place! Perfect for smelling
+                            good!</p>
                     </div>
                     <div class="card-footer">
                         <a class="btn btn-primary" style="width: 100%" id="gift1" onclick="claim('gift1')">Claim!</a>
@@ -207,7 +207,35 @@
             <p>I love you so much! You are my favorite person, my perfect person! I'm so excited that I get to be with
                 the best girl ever, and that I found her on the first try! <i class="fas fa-smile-beam"></i> You are the
                 best. The most beautiful. The most pretty! The smartiest and the kindest and the sweetest!</p>
-            <a class="btn btn-primary" onclick="show(12)" id="show12">Next</a>
+            <p>Again, I love you so so so much! I hope you have an amazing birthday, and I hope that you keep getting
+                happier and happier and never look back!</p>
+            <a class="btn btn-primary" onclick="show(12)" id="show12">Yay!</a>
+        </div>
+        <!-- Script for this <div> - from Simon Shahriveri -->
+        <script src="script/name.js" type="text/javascript"></script>
+        <div class="textbox mt-5 none" id="12">
+            <h3>I hope you enjoyed!</h3>
+            <p>I hope you had fun reading through my card! I worked really hard on it, as you are well aware of! Im so
+                excited that I get to see you today! I'll see you in a few hours! I love you, <a class="typewrite"
+                    data-period="2000"
+                    data-type='["Gigi", "Genevieve", "Guivevere", "Gigibyte", "cutie", "beautiful girl", "my perfect babie girl", "amazing girl", "talented cutie", "best cutie ever"]'>
+                    <span id="cursor"></span>
+                    <script type="text/javascript">
+                        let cursor = document.getElementById('cursor');
+                        function cursorBlink() {
+                            cursor.style.borderRight = "0.08em solid #fff;"
+                            console.log('yes');
+                            setInterval(function() {
+                                cursor.style.borderRight = "0.08em solid transparent;"
+                                console.log('yes');
+                            }, 800)
+                        }
+
+                        setInterval('cursorBlink', 1600)
+                    </script>
+                </a>!</p><br>
+            <p style="font-size: smaller;"><i class="fa fa-refresh" aria-hidden="true"></i> If you want to go through
+                this again, refresh the page!</p>
         </div>
     </main>
     <canvas id="canvas"></canvas>

@@ -109,14 +109,24 @@ body {
         text-shadow: 0 0 15px #47789b;
     }
 
+    15% {
+        text-shadow: 0 0 15px #aecde2;
+    }
+
     30% {
         color: #7dd352;
         text-shadow: 0 0 15px #4f8534;
+    }
+    45% {
+        text-shadow: 0 0 15px #b9dfa6;
     }
 
     60% {
         color: #e7935a;
         text-shadow: 0 0 15px #7e4f30;
+    }
+    75% {
+        text-shadow: 0 0 15px #e7ba9b;
     }
 
     90% {
@@ -125,16 +135,16 @@ body {
     }
 
     100% {
-        color: #b068f8;
-        text-shadow: 0 0 15px #61398a;
+        text-shadow: 0 0 15px rgb(146, 52, 67);
     }
 }
 
 .bdaycolor {
-    animation: bdaycolor 20s infinite;
+    animation: bdaycolor 10s infinite;
     animation-direction: alternate;
     position: relative !important;
 }
+
 
 /* Confetti */
 canvas {
