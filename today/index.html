@@ -224,11 +224,13 @@
             <p style="font-size: smaller;"><i class="fa fa-refresh" aria-hidden="true"></i> If you want to go through
                 this again, refresh the page!</p>
         </div>
+        <div class="textbox sticky-bottom mt-5">
+            <a class="btn" id="stopButton"
+                onclick="$('#stopButton').addClass('none'); $('#startButton').removeClass('none');">Stop Confetti</a>
+            <a class="btn none" id="startButton"
+                onclick="$('#startButton').addClass('none'); $('#stopButton').removeClass('none');">Start Confetti</a>
+        </div>
     </main>
-    <a class="btn btn-secondary btn-confetti" id="stopButton"
-        onclick="$('#stopButton').addClass('none'); $('#startButton').removeClass('none');">Stop Confetti</a>
-    <a class="btn btn-secondary btn-confetti none" id="startButton"
-        onclick="$('#startButton').addClass('none'); $('#stopButton').removeClass('none');">Start Confetti</a>
     <canvas id="canvas"></canvas>
 </body>
 

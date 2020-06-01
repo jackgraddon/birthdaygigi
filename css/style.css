@@ -151,12 +151,16 @@ body {
     border-right: thin solid white !important;
 }
 
-.btn-confetti {
+.sticky-bottom {
     position: sticky;
-    margin: 5px !important;
     bottom: 5px;
-    left: 0px;
-    opacity: 0.5;
+}
+
+.sticky-bottom .btn {
+    background-color: rgb(80, 80, 80);
+}
+.sticky-bottom .btn:hover {
+    background-color: rgb(60, 60, 60);
 }
 
 /* Confetti */
