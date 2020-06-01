@@ -225,6 +225,10 @@
                 this again, refresh the page!</p>
         </div>
     </main>
+    <a class="btn btn-secondary btn-confetti" id="stopButton"
+        onclick="$('#stopButton').addClass('none'); $('#startButton').removeClass('none');">Stop Confetti</a>
+    <a class="btn btn-secondary btn-confetti none" id="startButton"
+        onclick="$('#startButton').addClass('none'); $('#stopButton').removeClass('none');">Start Confetti</a>
     <canvas id="canvas"></canvas>
 </body>
 
