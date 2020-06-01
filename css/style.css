@@ -145,6 +145,11 @@ body {
     position: relative !important;
 }
 
+.cursor {
+    display: inline-block !important;
+    width: 0.08em !important;
+    border-right: thin solid white !important;
+}
 
 /* Confetti */
 canvas {
