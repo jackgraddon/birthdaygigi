@@ -203,7 +203,6 @@
             animationComplete = false;
             InitializeConfetti();
         }, 100);
-
     }
 
     window.requestAnimFrame = (function () {
