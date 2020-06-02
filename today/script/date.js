@@ -12,6 +12,7 @@ let checkTime = function check() {
         }
     } else {
         console.log(Cookies.get('surprise'));
+        clearInterval(check917);
     }
 }
-setInterval(checkTime, 5000);
+let check917 = setInterval(checkTime, 5000);
