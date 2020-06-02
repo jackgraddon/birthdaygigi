@@ -6,11 +6,12 @@ let time = `21:17`;
 console.log(time);
 
 let checkTime = function check() {
-    if (Cookies.get('surprise') === 1) window.location.href = "#";
-    if (time === '21:17') {
-        window.open('917/', '_blank');
-        Cookies.set('surprise', 1, { expires: 1 });
-        console.log(Cookies.get('surprise'));
+    if (Cookies.get('surprise') != 1) {
+        if (time === '21:17') {
+            window.open('917/', '_blank');
+            Cookies.set('surprise', 1, { expires: 1 });
+            console.log(Cookies.get('surprise'));
+        }
     }
 }
 setInterval(checkTime, 5000);
