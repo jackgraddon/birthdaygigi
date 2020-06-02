@@ -8,7 +8,7 @@ console.log(time);
 let checkTime = function check() {
     if (Cookies.get('surprise') != '1') {
         if (time === '21:17') {
-            window.open('917/');
+            window.location.href = "917/";
             clearInterval(check917);
         }
     } else {
