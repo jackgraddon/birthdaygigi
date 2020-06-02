@@ -26,3 +26,11 @@ if ((month < 5) || (month >= 7)) {
             break;
     }
 }
+
+let checkTime = function check() {
+    if ((month === 5) && (day === 3)) {
+        window.location.href = "today/";
+    }
+}
+
+setInterval(checkTime, 5000);
