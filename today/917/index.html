@@ -18,12 +18,12 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <script>
         console.log(Cookies.get('surprise'));
-
         let travel = function href() {
-            window.open('https://www.icloud.com/iclouddrive/0Ph2VLJfs0MGSxv9KMRO7205Q#present','_blank');
+            window.open('https://www.icloud.com/iclouddrive/0Ph2VLJfs0MGSxv9KMRO7205Q#present', '_blank');
             window.history.back();
         }
         function clicked() {
+            Cookies.set('surpise', '1', { expires: 1 });
             setTimeout(travel, 1);
         }
     </script>
