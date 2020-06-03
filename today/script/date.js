@@ -1,8 +1,7 @@
 var date = new Date();
 let hour = date.getHours()
 let minute = date.getMinutes();
-// let time = `${hour}:${minute}`;
-let time = `21:17`;
+let time = `${hour}:${minute}`;
 console.log(time);
 
 let checkTime = function check() {
